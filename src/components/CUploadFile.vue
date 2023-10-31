@@ -19,7 +19,9 @@ const props = defineProps<Props>()
  
 const uploading = ref('')
 const uploadFunction = (event) => {
+
     const file = event.target.files[0]
+    
       if (file && file.type.startsWith('image/')) {
         const set = new FileReader()
         set.onload = () => {

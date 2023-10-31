@@ -22,21 +22,21 @@ const props = defineProps({
 
 const count = ref(props.min);
 
-function increase(): void {
+function increase(){
   if (count.value >= props.max) {
     return;
   }
   count.value++;
 }
 
-function decrease(): void {
+function decrease(){
   if (count.value <= props.min) {
     return;
   }
   count.value--;
 }
 
-function checkLimits(): void {
+function checkLimits(){
   if (count.value < props.min) {
     count.value = props.min;
   } else if (count.value > props.max) {
