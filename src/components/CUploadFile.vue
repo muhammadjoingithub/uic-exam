@@ -11,14 +11,15 @@ import { ref , defineProps } from 'vue';
 
 interface Props {
 accept: {
-  type: String,
+  type: string,
+  required: true,
 }
 }
 const props = defineProps<Props>()
  
 const uploading = ref('')
-const uploadFunction = (idx) => {
-    const file = idx.target.files[0]
+const uploadFunction = (event) => {
+    const file = event.target.files[0]
       if (file && file.type.startsWith('image/')) {
         const set = new FileReader()
         set.onload = () => {
