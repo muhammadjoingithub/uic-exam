@@ -1,4 +1,3 @@
- <!-- Button.vue -->
 <template>
   <button
     :class="[variantClass, sizeClass, { 'disabled': disabled || loading }]"
