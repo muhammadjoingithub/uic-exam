@@ -47,3 +47,9 @@ function checkLimits(){
 const isMin = computed(() => count.value <= props.min);
 const isMax = computed(() => count.value >= props.max);
 </script>
+ <!-- <div class="bg-amber-400 w-[400px] rounded-md">
+      <CCounterUp :min="0" :max="5"/>
+    </div>
+   <div class="bg-amber-400 w-[400px] rounded-md">
+     <CUploadFile accept="image/*"/>
+   </div> -->

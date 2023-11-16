@@ -2,28 +2,28 @@
     <div class="container-fluid footer ">
       <div class="container footer-section">
             <div class="footer-texts1">
-              <a href="#"><img src="/public/images/slowlogo.png" alt=""></a>
+              <router-link to="/"><img src="/public/images/slowlogo.png" alt=""></router-link>
                 <p>This website is created to share information about historical, unique places located in Turkic states. </p>
             </div>
             <div class="footer-texts2">
-               <a href="#"><img src="/public/images/tg.png" alt=""></a>
-                <a href="#"><img src="/public/images/twit.png" alt=""></a>
+               <router-link to="/"><img src="/public/images/tg.png" alt=""></router-link>
+                <router-link to="/"><img src="/public/images/twit.png" alt=""></router-link>
 
-               <a href="#"><img src="/public/images/youtube.png" alt=""></a>
-                <a href="#"><img src="/public/images/insta.png" alt=""></a>
+               <router-link to="/"><img src="/public/images/youtube.png" alt=""></router-link>
+                <router-link to="/"><img src="/public/images/insta.png" alt=""></router-link>
             </div>
             <div class="footer-texts3">
-                 <div class="text3">Main page</div>
-                 <div class="text3">Media resources </div>
-                 <div class="text3">Contact</div>
-                 <div class="text3">F.A.Q</div>
-                 <div class="text3">Privacy  </div>
+                 <router-link to="/" class="text3">Main page</router-link>
+                 <router-link to="/" class="text3">Media resources </router-link>
+                 <router-link to="/" class="text3">Contact</router-link>
+                 <router-link to="/" class="text3">F.A.Q</router-link>
+                 <router-link to="/" class="text3">Privacy  </router-link>
             </div>
       </div>
     </div>
 <div class="container last-footer">
        <p>© 2023, Tabarruk Ziyorat</p>
-       <a href="#"><img src="/public/images/uiclogo.png" alt=""></a>
+       <router-link to="/"><img src="/public/images/uiclogo.png" alt=""></router-link>
     </div>
 </template>
 
@@ -32,7 +32,6 @@
 </script> 
 <style>
 .footer{
-    /* background-color: rgb(8, 8, 8); */
     height: auto;
     padding: 10px;
     background-image: url(/public/images/sun.png);
@@ -76,7 +75,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 130%; /* 20.8px */
+    line-height: 130%; 
 }
 .text3:hover{
     color: #E54545
@@ -95,7 +94,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 130%;
-margin-top: 20px; /* 18.2px */
+margin-top: 20px; 
 }
 @media screen and (max-width: 776px){
    .footer-section{
